@@ -1,0 +1,144 @@
+@import "reset";
+
+$color-primary:#000;
+$color-secondary:#fff;
+$color-tertiary:rgb(255,240,245);
+$color:	rgb(210,105,30);
+
+$font-design:Arial, Helvetica, sans-serif;
+
+.head {
+    position:sticky;
+    top: 0;
+    z-index: 10;
+}
+.head__logo {
+        background-color: #000;
+        font-weight: bold;
+        font-size: 25px;
+        color: #fff;
+        border: 1px solid pink;
+        text-align: center;
+        padding:10px 10px;
+        
+
+        a{
+            color:#fff;
+        }
+}
+
+
+.head__nav{
+    
+    
+    ul {
+        display: flex;
+        gap: 4px;
+        
+    }
+    li{
+        color: aquamarine;
+        padding:10px;
+        width:calc(100% / 3 - 4px);
+        background-color: pink;
+        text-align: center;
+       
+        &:hover{
+            border-bottom: 5px solid black;
+            position: relative;
+            text-decoration: none;
+        }
+    }
+    
+    
+}
+.mainvisual{
+    display:flex;
+
+    gap:4px 5px;
+    flex-wrap: wrap;
+
+    &__btn{
+        border:3px solid pink;
+        width: 150px;
+        height: 40px;
+        transform: skew(-20deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: pink;
+        }
+    }
+
+    &__box{
+        width:calc(100% / 3 - 11px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:100%;
+        }
+
+       
+    }
+
+}
+
+
+.container{
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.featured-bloc{
+    margin:10px;
+
+    dt{
+        background-color:brown;
+        padding:10px 5px;
+        color:white;
+        position: relative;
+        font-family: $font-design;
+    }
+
+    
+      dd{
+        padding:20px 10px;
+      }
+}
+
+
+// .featured-bloc{
+//          margin:10px;
+
+//         &__title{
+//             display: block;
+//             background-color:pink;
+//             color:white;
+//             padding:15px 10px;
+
+//             &::after {
+//                 // cursor: pointer;
+//                 position: absolute;
+//                 content: "\002B";
+//                 right: 30px;
+              
+    
+//                 // bottom: 13px;
+//               }
+             
+//          &__txt {
+//             text-align: justify;
+//             margin:10px 10px;
+//         }
+// }
+// }
+
+
+
+
+
+
+  
